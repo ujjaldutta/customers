@@ -14,7 +14,7 @@ public function __construct()
         session_start();
     }
     try {
-        $this->conn = new mysqli("localhost", "root", "f", "customers");
+        $this->conn = new mysqli("localhost", "dev03_db03", "DRmvuTGSU0", "dev03_db03");
         if (mysqli_connect_errno()) {
             printf("Connect failed: %s\n", mysqli_connect_error().'<br />');
             printf('Please check db details of classes/Connection.php');
